@@ -1,0 +1,242 @@
+.listing-card {
+  width: 330px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  border: 1px solid #eeeeee;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  font-family: Arial, sans-serif;
+
+  transition: 0.3s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGE */
+
+.card-image {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.4s ease;
+}
+
+.listing-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+
+/* AVAILABLE */
+
+.available-badge {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  background: #65b82f;
+  color: white;
+
+  padding: 7px 11px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* HEART */
+
+.favorite-btn {
+  position: absolute;
+
+  top: 11px;
+  right: 11px;
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  line-height: 36px;
+}
+
+
+/* BHK */
+
+.bhk-badge {
+  position: absolute;
+
+  bottom: 11px;
+  left: 12px;
+
+  background: #7052d9;
+  color: white;
+
+  padding: 6px 10px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* DISTANCE */
+
+.distance-badge {
+  position: absolute;
+
+  bottom: 11px;
+  right: 12px;
+
+  background: rgba(30, 30, 30, 0.75);
+
+  color: white;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+}
+
+
+/* CONTENT */
+
+.card-content {
+  padding: 15px;
+}
+
+
+/* TITLE */
+
+.card-content h3 {
+  margin: 0 0 7px;
+
+  color: #172033;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* LOCATION */
+
+.location {
+  margin: 0 0 13px;
+
+  color: #777d89;
+
+  font-size: 12px;
+}
+
+
+/* PRICE ROW */
+
+.price-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+/* PRICE */
+
+.price {
+  color: #e94f8a;
+
+  font-size: 19px;
+
+  font-weight: 800;
+}
+
+.price span {
+  color: #777d89;
+
+  font-size: 10px;
+
+  font-weight: normal;
+}
+
+
+/* GENDER */
+
+.gender {
+  color: #6652d6;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* INFO */
+
+.info-row {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-top: 13px;
+}
+
+.info-row > div {
+  text-align: center;
+
+  border-right: 1px solid #eeeeee;
+}
+
+.info-row > div:last-child {
+  border-right: none;
+}
+
+.info-row strong {
+  display: block;
+
+  color: #252a35;
+
+  font-size: 12px;
+}
+
+.info-row small {
+  display: block;
+
+  color: #8a8f9b;
+
+  font-size: 9px;
+
+  margin-top: 3px;
+}
