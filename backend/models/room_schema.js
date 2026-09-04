@@ -1,5 +1,4 @@
 const mongoose=require('mongoose')
-
 const roomSchema=new mongoose.Schema({
        title:{
         type:String,
@@ -49,7 +48,7 @@ const roomSchema=new mongoose.Schema({
      },
        available:{
         type:String,
-        enum:['Availabel','Not Availabel'],
+        enum:['Available','Not Available'],
         required:true
        },
          reviews:[

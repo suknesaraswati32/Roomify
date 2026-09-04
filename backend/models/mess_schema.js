@@ -64,6 +64,7 @@ WeeklyMenu:{
 },
 Availabel:{
   type:String,
+  enum:['Available','Not Available'],
   required:true
 }
 })
